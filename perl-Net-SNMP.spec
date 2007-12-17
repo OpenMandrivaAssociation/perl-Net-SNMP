@@ -20,7 +20,6 @@ Requires:	perl-Crypt-DES => 2.03
 Requires:	perl-Digest-HMAC => 1.0
 Requires:	perl-Digest-SHA1 => 1.02
 BuildArch:      noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Net::SNMP module implements an object oriented interface to the Simple
