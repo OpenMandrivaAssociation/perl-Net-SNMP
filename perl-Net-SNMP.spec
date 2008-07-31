@@ -1,7 +1,7 @@
 %define module	Net-SNMP
 %define name	perl-%{module}
 %define version 5.2.0
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name:		%{name}
 Version:	%{version}
