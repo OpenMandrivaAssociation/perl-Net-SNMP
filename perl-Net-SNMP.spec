@@ -1,5 +1,5 @@
 %define upstream_name	 Net-SNMP
-%define upstream_version v6.0.0
+%define upstream_version 6.0.1
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Object oriented interface to SNMP for perl
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-v%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
@@ -34,7 +34,7 @@ The Net::SNMP module assumes that the user has a basic understanding of the
 Simple Network Management Protocol and related network management concepts.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-v%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
