@@ -27,22 +27,22 @@ The Net::SNMP module assumes that the user has a basic understanding of the
 Simple Network Management Protocol and related network management concepts.
 
 %prep
-%setup -qn %{modname}-v%{modver}
+%autosetup -p1 -n %{modname}-v%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes README
 %{_bindir}/snmpkey
 %{perl_vendorlib}/Net
-%{_mandir}/man1/*
-%{_mandir}/man3/*
+%doc %{_mandir}/man1/*
+%doc %{_mandir}/man3/*
 
