@@ -33,9 +33,6 @@ Simple Network Management Protocol and related network management concepts.
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
-%check
-make test
-
 %install
 %make_install
 
