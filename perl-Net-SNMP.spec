@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{modname}-v%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl-Crypt-DES => 2.03
 BuildRequires:	perl-Digest-HMAC => 1.0
